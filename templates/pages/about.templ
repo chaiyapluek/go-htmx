@@ -1,0 +1,24 @@
+package pages
+
+import "github.com/chaiyapluek/go-htmx/src/pkg/models"
+import "github.com/chaiyapluek/go-htmx/templates"
+
+templ About(info models.Info) {
+	@templates.Layout(nil) {
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>This is a about page</h1>
+					<p>{ info.Test }</p>
+					<p>
+						if info.RemoteIP == "" {
+							Your remote ip address is { info.Test }
+						} else {
+							I don't know your ip address yet. Visit the <a href="/">Home page</a>
+						}
+					</p>
+				</div>
+			</div>
+		</div>
+	}
+}

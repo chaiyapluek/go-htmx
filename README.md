@@ -1,6 +1,6 @@
 # GOLANG/HTMX
 
-Simple project for exploring HTMX
+Simple project for exploring HTMX \
 Tech Stack
 - [htmx](https://htmx.org/)
 - [echo](https://github.com/labstack/echo)
